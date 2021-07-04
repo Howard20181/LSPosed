@@ -19,4 +19,5 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keepnames class io.github.lsposed.lspd.hooker.HandleBindAppHooker
 -keepclasseswithmembers class io.github.lsposed.lspd.Application { *; }

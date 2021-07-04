@@ -19,7 +19,7 @@ def commitCount = new Git(repo).log().add(refId).call().size()
 
 allprojects {
     ext {
-        versionCode = commitCount + 3733
+        versionCode = commitCount + 3734
         versionName = versionName
         zipPathMagiskReleasePath = project(":core").projectDir.path + "/build/tmp/release/magisk/"
     }

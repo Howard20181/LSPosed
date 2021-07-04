@@ -20,3 +20,4 @@ elf-cleaner.sh
 .vscode/
 
 .cxx
+app/release/
