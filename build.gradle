@@ -5,6 +5,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.2'
@@ -18,15 +19,16 @@ def commitCount = new Git(repo).log().add(refId).call().size()
 
 allprojects {
     ext {
-        versionCode = commitCount + 4200
+        versionCode = commitCount + 3733
         versionName = versionName
         zipPathMagiskReleasePath = project(":core").projectDir.path + "/build/tmp/release/magisk/"
     }
     repositories {
         google()
         jcenter()
+        mavenCentral()
         maven { url 'https://jitpack.io' }
-        maven { url 'https://dl.bintray.com/rikkaw/Libraries' }
+        maven { url 'https://jcenter.bintray.com/rikkaw/Libraries' }
     }
 }
 

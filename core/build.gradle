@@ -50,11 +50,11 @@ ext {
 repositories {
     mavenLocal()
     jcenter()
-    maven { url 'https://dl.bintray.com/rikkaw/Libraries' }
+    maven { url 'https://jcenter.bintray.com/rikkaw/Libraries' }
 }
 
 dependencies {
-    implementation 'rikka.ndk:riru:10'
+    implementation 'dev.rikka.ndk:riru:10'
     implementation 'com.android.tools.build:apksig:4.1.2'
     implementation project(path: ':sandhook-hooklib')
     compileOnly project(':hiddenapi-stubs')
